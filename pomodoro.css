@@ -1,0 +1,93 @@
+*
+{
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: medium;
+  color: rgb(198, 194, 194);
+  font-family: Roboto;
+} 
+body
+ {
+  background-color: rgb(44, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15%;
+}
+.container
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(91, 97, 93, 0.313);
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.timer-top
+{
+  display: flex;
+  flex-direction: row;
+  
+}
+.timer-middle
+{
+  display: block;
+  font-size: 120px;
+  font-weight: 700;
+  
+}
+.timer-bottom
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.short-break, .long-break ,.pomodoro, .start, .stop, .pause
+{
+  background-color: rgb(41, 0, 0);
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.pomodoro:hover
+{
+  cursor: pointer;
+  opacity: 0.5;
+  color: white;
+}
+.short-break:hover
+{
+  cursor: pointer;
+  opacity: 0.5;
+  color: white;
+}
+.long-break:hover
+{
+  cursor: pointer;
+  opacity: 0.5;
+  color: white;
+}
+.start:hover
+{
+  cursor: pointer;
+  opacity: 0.5;
+  color: white;
+}
+.pause:hover
+{
+  cursor: pointer;
+  opacity: 0.5;
+  color: white;
+}
+.stop:hover
+{
+  cursor: pointer;
+  opacity: 0.5;
+  color: white;
+}
