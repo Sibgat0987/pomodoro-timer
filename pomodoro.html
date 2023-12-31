@@ -2,7 +2,7 @@
 <!-- 500 700 900 !-->
 <html>
   <head>
-    <title>promodoro</title>
+    <title>pomodoro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto+Slab:wght@300;400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -21,21 +21,22 @@
            Long break
          </button>
       </div>
-      <div class="timer-middle">
+      <div class="timer-middle" id="pomodoro-timer-el">
         25 &#58 00
       </div>
       <div class="timer-bottom">
-       <button class="start">
+       <button class="start" id="start-el">
          START
        </button>
-       <button class="pause">
+       <button class="pause " id="pause-el">
          PAUSE
        </button>
-       <button class="stop">
+       <button class="stop" id="stop-el">
          STOP
        </button>
+       <button class="reset" id="reset-el">RESET</button>
       </div>
     </div>
-    
+    <script src="pomodoro.js"></script>
   </body>
 </html>

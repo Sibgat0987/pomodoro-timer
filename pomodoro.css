@@ -46,7 +46,7 @@ body
   flex-direction: row;
 }
 
-.short-break, .long-break ,.pomodoro, .start, .stop, .pause
+.short-break, .long-break ,.pomodoro, .start, .stop, .pause ,.reset
 {
   background-color: rgb(41, 0, 0);
   border: none;
@@ -86,6 +86,12 @@ body
   color: white;
 }
 .stop:hover
+{
+  cursor: pointer;
+  opacity: 0.5;
+  color: white;
+}
+.reset:hover
 {
   cursor: pointer;
   opacity: 0.5;
