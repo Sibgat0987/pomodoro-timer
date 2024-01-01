@@ -16,19 +16,8 @@ let isRunning = false;
 function startTimer() {
     pomodoroTime = setInterval(() => {
       if (seconds === 0 && minutes === 0) {
-        clearInterval(pomodoroTime);
-        isRunning = false;
-        pauseEl.innerHTML = "RESUME";
-  
-        if (isBreak) {
-          if (shortBreak.classList.contains("active")) {
-            longBreak.click();
-          } else {
-            pomodoro.click();
-          }
-        } else {
-          shortBreak.click();
-        }
+       clearTimeout(pomodoroTime)
+       pomodoroEl.innerHTML=`00:00`
       } else {
         if (seconds === 0) {
           seconds = 59;
@@ -45,7 +34,7 @@ function startTimer() {
   }
   
   startEl.addEventListener("click", () => {
-
+    clearTimeout(pomodoroTime)
     startTimer();
     isRunning = true;
     
@@ -66,7 +55,6 @@ resetEl.addEventListener("click", () => {
   clearInterval(pomodoroTime);
   pomodoroEl.innerHTML = `25:00`;
   isRunning = false;
-  pauseEl.innerHTML = "PAUSE"; 
 });
 
 shortBreak.addEventListener("click", () => {
@@ -74,7 +62,6 @@ shortBreak.addEventListener("click", () => {
   minutes = 5;
   seconds = 0;
   pomodoroEl.innerHTML = `05:00`;
-  startTimer();
 });
 
 longBreak.addEventListener("click", () => {
@@ -82,7 +69,6 @@ longBreak.addEventListener("click", () => {
   minutes = 10;
   seconds = 0;
   pomodoroEl.innerHTML = `10:00`;
-  startTimer();
 });
 
 pomodoro.addEventListener("click", () => {
